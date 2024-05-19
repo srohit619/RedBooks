@@ -1,0 +1,811 @@
+[{
+    "bookID": "1",
+    "bookTitle": "The Great Gatsby",
+    "bookAuthor": "F. Scott Fitzgerald",
+    "bookGenre": "Fiction",
+    "bookYear": "1925",
+    "bookPublisher": "Charles Scribner's Sons",
+    "bookPages": 218,
+    "bookLanguage": "English"
+}, {
+    "bookID": "2",
+    "bookTitle": "To Kill a Mockingbird",
+    "bookAuthor": "Harper Lee",
+    "bookGenre": "Fiction",
+    "bookYear": "1960",
+    "bookPublisher": "J.B. Lippincott & Co.",
+    "bookPages": 281,
+    "bookLanguage": "English"
+}, {
+    "bookID": "3",
+    "bookTitle": "1984",
+    "bookAuthor": "George Orwell",
+    "bookGenre": "Dystopian",
+    "bookYear": "1949",
+    "bookPublisher": "Secker & Warburg",
+    "bookPages": 328,
+    "bookLanguage": "English"
+}, {
+    "bookID": "4",
+    "bookTitle": "Pride and Prejudice",
+    "bookAuthor": "Jane Austen",
+    "bookGenre": "Romance",
+    "bookYear": "1813",
+    "bookPublisher": "T. Egerton",
+    "bookPages": 279,
+    "bookLanguage": "English"
+}, {
+    "bookID": "5",
+    "bookTitle": "The Catcher in the Rye",
+    "bookAuthor": "J.D. Salinger",
+    "bookGenre": "Fiction",
+    "bookYear": "1951",
+    "bookPublisher": "Little, Brown and Company",
+    "bookPages": 214,
+    "bookLanguage": "English"
+}, {
+    "bookID": "6",
+    "bookTitle": "The Hobbit",
+    "bookAuthor": "J.R.R. Tolkien",
+    "bookGenre": "Fantasy",
+    "bookYear": "1937",
+    "bookPublisher": "George Allen & Unwin",
+    "bookPages": 310,
+    "bookLanguage": "English"
+}, {
+    "bookID": "7",
+    "bookTitle": "Moby Dick",
+    "bookAuthor": "Herman Melville",
+    "bookGenre": "Adventure",
+    "bookYear": "1851",
+    "bookPublisher": "Harper & Brothers",
+    "bookPages": 635,
+    "bookLanguage": "English"
+}, {
+    "bookID": "8",
+    "bookTitle": "War and Peace",
+    "bookAuthor": "Leo Tolstoy",
+    "bookGenre": "Historical Fiction",
+    "bookYear": "1869",
+    "bookPublisher": "The Russian Messenger",
+    "bookPages": 1225,
+    "bookLanguage": "Russian"
+}, {
+    "bookID": "9",
+    "bookTitle": "The Odyssey",
+    "bookAuthor": "Homer",
+    "bookGenre": "Epic",
+    "bookYear": "8th Century BC",
+    "bookPublisher": "Various",
+    "bookPages": 541,
+    "bookLanguage": "Ancient Greek"
+}, {
+    "bookID": "10",
+    "bookTitle": "Hamlet",
+    "bookAuthor": "William Shakespeare",
+    "bookGenre": "Tragedy",
+    "bookYear": "1600",
+    "bookPublisher": "N/A",
+    "bookPages": 400,
+    "bookLanguage": "English"
+}, {
+    "bookID": "11",
+    "bookTitle": "The Kite Runner",
+    "bookAuthor": "Khaled Hosseini",
+    "bookGenre": "Drama",
+    "bookYear": "2003",
+    "bookPublisher": "Riverhead Books",
+    "bookPages": 371,
+    "bookLanguage": "English"
+}, {
+    "bookID": "12",
+    "bookTitle": "The Da Vinci Code",
+    "bookAuthor": "Dan Brown",
+    "bookGenre": "Mystery",
+    "bookYear": "2003",
+    "bookPublisher": "Doubleday",
+    "bookPages": 454,
+    "bookLanguage": "English"
+}, {
+    "bookID": "13",
+    "bookTitle": "Brave New World",
+    "bookAuthor": "Aldous Huxley",
+    "bookGenre": "Science Fiction",
+    "bookYear": "1932",
+    "bookPublisher": "Chatto & Windus",
+    "bookPages": 268,
+    "bookLanguage": "English"
+}, {
+    "bookID": "14",
+    "bookTitle": "Jane Eyre",
+    "bookAuthor": "Charlotte Brontë",
+    "bookGenre": "Romance",
+    "bookYear": "1847",
+    "bookPublisher": "Smith, Elder & Co.",
+    "bookPages": 500,
+    "bookLanguage": "English"
+}, {
+    "bookID": "15",
+    "bookTitle": "Wuthering Heights",
+    "bookAuthor": "Emily Brontë",
+    "bookGenre": "Gothic Fiction",
+    "bookYear": "1847",
+    "bookPublisher": "Thomas Cautley Newby",
+    "bookPages": 416,
+    "bookLanguage": "English"
+}, {
+    "bookID": "16",
+    "bookTitle": "The Chronicles of Narnia",
+    "bookAuthor": "C.S. Lewis",
+    "bookGenre": "Fantasy",
+    "bookYear": "1950",
+    "bookPublisher": "Geoffrey Bles",
+    "bookPages": 767,
+    "bookLanguage": "English"
+}, {
+    "bookID": "17",
+    "bookTitle": "The Alchemist",
+    "bookAuthor": "Paulo Coelho",
+    "bookGenre": "Adventure",
+    "bookYear": "1988",
+    "bookPublisher": "HarperTorch",
+    "bookPages": 208,
+    "bookLanguage": "Portuguese"
+}, {
+    "bookID": "18",
+    "bookTitle": "Little Women",
+    "bookAuthor": "Louisa May Alcott",
+    "bookGenre": "Fiction",
+    "bookYear": "1868",
+    "bookPublisher": "Roberts Brothers",
+    "bookPages": 759,
+    "bookLanguage": "English"
+}, {
+    "bookID": "19",
+    "bookTitle": "The Fault in Our Stars",
+    "bookAuthor": "John Green",
+    "bookGenre": "Young Adult",
+    "bookYear": "2012",
+    "bookPublisher": "Dutton Books",
+    "bookPages": 313,
+    "bookLanguage": "English"
+}, {
+    "bookID": "20",
+    "bookTitle": "The Shining",
+    "bookAuthor": "Stephen King",
+    "bookGenre": "Horror",
+    "bookYear": "1977",
+    "bookPublisher": "Doubleday",
+    "bookPages": 447,
+    "bookLanguage": "English"
+}, {
+    "bookID": "21",
+    "bookTitle": "Dune",
+    "bookAuthor": "Frank Herbert",
+    "bookGenre": "Science Fiction",
+    "bookYear": "1965",
+    "bookPublisher": "Chilton Books",
+    "bookPages": 412,
+    "bookLanguage": "English"
+}, {
+    "bookID": "22",
+    "bookTitle": "Frankenstein",
+    "bookAuthor": "Mary Shelley",
+    "bookGenre": "Horror",
+    "bookYear": "1818",
+    "bookPublisher": "Lackington, Hughes, Harding, Mavor & Jones",
+    "bookPages": 280,
+    "bookLanguage": "English"
+}, {
+    "bookID": "23",
+    "bookTitle": "The Catch-22",
+    "bookAuthor": "Joseph Heller",
+    "bookGenre": "Satire",
+    "bookYear": "1961",
+    "bookPublisher": "Simon & Schuster",
+    "bookPages": 453,
+    "bookLanguage": "English"
+}, {
+    "bookID": "24",
+    "bookTitle": "Anna Karenina",
+    "bookAuthor": "Leo Tolstoy",
+    "bookGenre": "Romance",
+    "bookYear": "1878",
+    "bookPublisher": "The Russian Messenger",
+    "bookPages": 864,
+    "bookLanguage": "Russian"
+}, {
+    "bookID": "25",
+    "bookTitle": "The Book Thief",
+    "bookAuthor": "Markus Zusak",
+    "bookGenre": "Historical Fiction",
+    "bookYear": "2005",
+    "bookPublisher": "Picador",
+    "bookPages": 584,
+    "bookLanguage": "English"
+}, {
+    "bookID": "26",
+    "bookTitle": "A Game of Thrones",
+    "bookAuthor": "George R.R. Martin",
+    "bookGenre": "Fantasy",
+    "bookYear": "1996",
+    "bookPublisher": "Bantam Books",
+    "bookPages": 694,
+    "bookLanguage": "English"
+}, {
+    "bookID": "27",
+    "bookTitle": "The Picture of Dorian Gray",
+    "bookAuthor": "Oscar Wilde",
+    "bookGenre": "Philosophical Fiction",
+    "bookYear": "1890",
+    "bookPublisher": "Lippincott's Monthly Magazine",
+    "bookPages": 254,
+    "bookLanguage": "English"
+}, {
+    "bookID": "28",
+    "bookTitle": "Dracula",
+    "bookAuthor": "Bram Stoker",
+    "bookGenre": "Gothic Horror",
+    "bookYear": "1897",
+    "bookPublisher": "Archibald Constable and Company",
+    "bookPages": 418,
+    "bookLanguage": "English"
+}, {
+    "bookID": "29",
+    "bookTitle": "The Hobbit",
+    "bookAuthor": "J.R.R. Tolkien",
+    "bookGenre": "Fantasy",
+    "bookYear": "1937",
+    "bookPublisher": "George Allen & Unwin",
+    "bookPages": 310,
+    "bookLanguage": "English"
+}, {
+    "bookID": "30",
+    "bookTitle": "The Handmaid's Tale",
+    "bookAuthor": "Margaret Atwood",
+    "bookGenre": "Dystopian",
+    "bookYear": "1985",
+    "bookPublisher": "McClelland & Stewart",
+    "bookPages": 311,
+    "bookLanguage": "English"
+}, {
+    "bookID": "31",
+    "bookTitle": "Fahrenheit 451",
+    "bookAuthor": "Ray Bradbury",
+    "bookGenre": "Dystopian",
+    "bookYear": "1953",
+    "bookPublisher": "Ballantine Books",
+    "bookPages": 194,
+    "bookLanguage": "English"
+}, {
+    "bookID": "32",
+    "bookTitle": "Slaughterhouse-Five",
+    "bookAuthor": "Kurt Vonnegut",
+    "bookGenre": "Science Fiction",
+    "bookYear": "1969",
+    "bookPublisher": "Delacorte",
+    "bookPages": 275,
+    "bookLanguage": "English"
+}, {
+    "bookID": "33",
+    "bookTitle": "Gone with the Wind",
+    "bookAuthor": "Margaret Mitchell",
+    "bookGenre": "Historical Fiction",
+    "bookYear": "1936",
+    "bookPublisher": "Macmillan Publishers",
+    "bookPages": 1037,
+    "bookLanguage": "English"
+}, {
+    "bookID": "34",
+    "bookTitle": "The Secret Garden",
+    "bookAuthor": "Frances Hodgson Burnett",
+    "bookGenre": "Children's Fiction",
+    "bookYear": "1911",
+    "bookPublisher": "Frederick A. Stokes",
+    "bookPages": 375,
+    "bookLanguage": "English"
+}, {
+    "bookID": "35",
+    "bookTitle": "Crime and Punishment",
+    "bookAuthor": "Fyodor Dostoevsky",
+    "bookGenre": "Philosophical Fiction",
+    "bookYear": "1866",
+    "bookPublisher": "The Russian Messenger",
+    "bookPages": 671,
+    "bookLanguage": "Russian"
+}, {
+    "bookID": "36",
+    "bookTitle": "A Tale of Two Cities",
+    "bookAuthor": "Charles Dickens",
+    "bookGenre": "Historical Fiction",
+    "bookYear": "1859",
+    "bookPublisher": "Chapman & Hall",
+    "bookPages": 489,
+    "bookLanguage": "English"
+}, {
+    "bookID": "37",
+    "bookTitle": "Don Quixote",
+    "bookAuthor": "Miguel de Cervantes",
+    "bookGenre": "Adventure",
+    "bookYear": "1605",
+    "bookPublisher": "Francisco de Robles",
+    "bookPages": 863,
+    "bookLanguage": "Spanish"
+}, {
+    "bookID": "38",
+    "bookTitle": "One Hundred Years of Solitude",
+    "bookAuthor": "Gabriel Garcia Marquez",
+    "bookGenre": "Magic Realism",
+    "bookYear": "1967",
+    "bookPublisher": "Harper & Row",
+    "bookPages": 417,
+    "bookLanguage": "Spanish"
+}, {
+    "bookID": "39",
+    "bookTitle": "The Brothers Karamazov",
+    "bookAuthor": "Fyodor Dostoevsky",
+    "bookGenre": "Philosophical Fiction",
+    "bookYear": "1880",
+    "bookPublisher": "The Russian Messenger",
+    "bookPages": 824,
+    "bookLanguage": "Russian"
+}, {
+    "bookID": "40",
+    "bookTitle": "The Old Man and the Sea",
+    "bookAuthor": "Ernest Hemingway",
+    "bookGenre": "Literary Fiction",
+    "bookYear": "1952",
+    "bookPublisher": "Charles Scribner's Sons",
+    "bookPages": 127,
+    "bookLanguage": "English"
+}, {
+    "bookID": "41",
+    "bookTitle": "The Lord of the Rings",
+    "bookAuthor": "J.R.R. Tolkien",
+    "bookGenre": "Fantasy",
+    "bookYear": "1954",
+    "bookPublisher": "George Allen & Unwin",
+    "bookPages": 1178,
+    "bookLanguage": "English"
+}, {
+    "bookID": "42",
+    "bookTitle": "Lolita",
+    "bookAuthor": "Vladimir Nabokov",
+    "bookGenre": "Literary Fiction",
+    "bookYear": "1955",
+    "bookPublisher": "Olympia Press",
+    "bookPages": 336,
+    "bookLanguage": "English"
+}, {
+    "bookID": "43",
+    "bookTitle": "Beloved",
+    "bookAuthor": "Toni Morrison",
+    "bookGenre": "Historical Fiction",
+    "bookYear": "1987",
+    "bookPublisher": "Alfred A. Knopf",
+    "bookPages": 324,
+    "bookLanguage": "English"
+}, {
+    "bookID": "44",
+    "bookTitle": "Ulysses",
+    "bookAuthor": "James Joyce",
+    "bookGenre": "Modernist",
+    "bookYear": "1922",
+    "bookPublisher": "Sylvia Beach",
+    "bookPages": 730,
+    "bookLanguage": "English"
+}, {
+    "bookID": "45",
+    "bookTitle": "The Road",
+    "bookAuthor": "Cormac McCarthy",
+    "bookGenre": "Post-Apocalyptic Fiction",
+    "bookYear": "2006",
+    "bookPublisher": "Alfred A. Knopf",
+    "bookPages": 287,
+    "bookLanguage": "English"
+}, {
+    "bookID": "46",
+    "bookTitle": "Invisible Man",
+    "bookAuthor": "Ralph Ellison",
+    "bookGenre": "Literary Fiction",
+    "bookYear": "1952",
+    "bookPublisher": "Random House",
+    "bookPages": 581,
+    "bookLanguage": "English"
+}, {
+    "bookID": "47",
+    "bookTitle": "Life of Pi",
+    "bookAuthor": "Yann Martel",
+    "bookGenre": "Adventure",
+    "bookYear": "2001",
+    "bookPublisher": "Knopf Canada",
+    "bookPages": 354,
+    "bookLanguage": "English"
+}, {
+    "bookID": "48",
+    "bookTitle": "Rebecca",
+    "bookAuthor": "Daphne du Maurier",
+    "bookGenre": "Gothic Fiction",
+    "bookYear": "1938",
+    "bookPublisher": "Victor Gollancz",
+    "bookPages": 416,
+    "bookLanguage": "English"
+}, {
+    "bookID": "49",
+    "bookTitle": "The Bell Jar",
+    "bookAuthor": "Sylvia Plath",
+    "bookGenre": "Literary Fiction",
+    "bookYear": "1963",
+    "bookPublisher": "Heinemann",
+    "bookPages": 244,
+    "bookLanguage": "English"
+}, {
+    "bookID": "50",
+    "bookTitle": "Animal Farm",
+    "bookAuthor": "George Orwell",
+    "bookGenre": "Political Satire",
+    "bookYear": "1945",
+    "bookPublisher": "Secker & Warburg",
+    "bookPages": 112,
+    "bookLanguage": "English"
+}, {
+    "bookID": "51",
+    "bookTitle": "A Clockwork Orange",
+    "bookAuthor": "Anthony Burgess",
+    "bookGenre": "Dystopian",
+    "bookYear": "1962",
+    "bookPublisher": "William Heinemann",
+    "bookPages": 192,
+    "bookLanguage": "English"
+}, {
+    "bookID": "52",
+    "bookTitle": "The Catcher in the Rye",
+    "bookAuthor": "J.D. Salinger",
+    "bookGenre": "Literary Fiction",
+    "bookYear": "1951",
+    "bookPublisher": "Little, Brown and Company",
+    "bookPages": 277,
+    "bookLanguage": "English"
+}, {
+    "bookID": "53",
+    "bookTitle": "Moby-Dick",
+    "bookAuthor": "Herman Melville",
+    "bookGenre": "Adventure",
+    "bookYear": "1851",
+    "bookPublisher": "Harper & Brothers",
+    "bookPages": 585,
+    "bookLanguage": "English"
+}, {
+    "bookID": "54",
+    "bookTitle": "Emma",
+    "bookAuthor": "Jane Austen",
+    "bookGenre": "Literary Fiction",
+    "bookYear": "1815",
+    "bookPublisher": "John Murray",
+    "bookPages": 474,
+    "bookLanguage": "English"
+}, {
+    "bookID": "55",
+    "bookTitle": "The Divine Comedy",
+    "bookAuthor": "Dante Alighieri",
+    "bookGenre": "Epic Poetry",
+    "bookYear": "1320",
+    "bookPublisher": "Various",
+    "bookPages": 798,
+    "bookLanguage": "Italian"
+}, {
+    "bookID": "56",
+    "bookTitle": "Catch-22",
+    "bookAuthor": "Joseph Heller",
+    "bookGenre": "Satire",
+    "bookYear": "1961",
+    "bookPublisher": "Simon & Schuster",
+    "bookPages": 453,
+    "bookLanguage": "English"
+}, {
+    "bookID": "57",
+    "bookTitle": "The Giver",
+    "bookAuthor": "Lois Lowry",
+    "bookGenre": "Young Adult",
+    "bookYear": "1993",
+    "bookPublisher": "Houghton Mifflin",
+    "bookPages": 240,
+    "bookLanguage": "English"
+}, {
+    "bookID": "58",
+    "bookTitle": "Charlotte's Web",
+    "bookAuthor": "E.B. White",
+    "bookGenre": "Children's Fiction",
+    "bookYear": "1952",
+    "bookPublisher": "Harper & Brothers",
+    "bookPages": 192,
+    "bookLanguage": "English"
+}, {
+    "bookID": "59",
+    "bookTitle": "The Little Prince",
+    "bookAuthor": "Antoine de Saint-Exupéry",
+    "bookGenre": "Children's Fiction",
+    "bookYear": "1943",
+    "bookPublisher": "Reynal & Hitchcock",
+    "bookPages": 96,
+    "bookLanguage": "French"
+}, {
+    "bookID": "60",
+    "bookTitle": "Memoirs of a Geisha",
+    "bookAuthor": "Arthur Golden",
+    "bookGenre": "Historical Fiction",
+    "bookYear": "1997",
+    "bookPublisher": "Alfred A. Knopf",
+    "bookPages": 428,
+    "bookLanguage": "English"
+}, {
+    "bookID": "61",
+    "bookTitle": "The Girl with the Dragon Tattoo",
+    "bookAuthor": "Stieg Larsson",
+    "bookGenre": "Mystery",
+    "bookYear": "2005",
+    "bookPublisher": "Norstedts Förlag",
+    "bookPages": 465,
+    "bookLanguage": "Swedish"
+}, {
+    "bookID": "62",
+    "bookTitle": "The Count of Monte Cristo",
+    "bookAuthor": "Alexandre Dumas",
+    "bookGenre": "Adventure",
+    "bookYear": "1844",
+    "bookPublisher": "Chapman & Hall",
+    "bookPages": 1276,
+    "bookLanguage": "French"
+}, {
+    "bookID": "63",
+    "bookTitle": "The Wind in the Willows",
+    "bookAuthor": "Kenneth Grahame",
+    "bookGenre": "Children's Fiction",
+    "bookYear": "1908",
+    "bookPublisher": "Methuen",
+    "bookPages": 302,
+    "bookLanguage": "English"
+}, {
+    "bookID": "64",
+    "bookTitle": "The Secret History",
+    "bookAuthor": "Donna Tartt",
+    "bookGenre": "Mystery",
+    "bookYear": "1992",
+    "bookPublisher": "Alfred A. Knopf",
+    "bookPages": 559,
+    "bookLanguage": "English"
+}, {
+    "bookID": "65",
+    "bookTitle": "The Name of the Rose",
+    "bookAuthor": "Umberto Eco",
+    "bookGenre": "Historical Mystery",
+    "bookYear": "1980",
+    "bookPublisher": "Bompiani",
+    "bookPages": 502,
+    "bookLanguage": "Italian"
+}, {
+    "bookID": "66",
+    "bookTitle": "The Joy Luck Club",
+    "bookAuthor": "Amy Tan",
+    "bookGenre": "Fiction",
+    "bookYear": "1989",
+    "bookPublisher": "G.P. Putnam's Sons",
+    "bookPages": 288,
+    "bookLanguage": "English"
+}, {
+    "bookID": "67",
+    "bookTitle": "The Adventures of Huckleberry Finn",
+    "bookAuthor": "Mark Twain",
+    "bookGenre": "Adventure",
+    "bookYear": "1884",
+    "bookPublisher": "Chatto & Windus",
+    "bookPages": 366,
+    "bookLanguage": "English"
+}, {
+    "bookID": "68",
+    "bookTitle": "Brave New World",
+    "bookAuthor": "Aldous Huxley",
+    "bookGenre": "Dystopian",
+    "bookYear": "1932",
+    "bookPublisher": "Chatto & Windus",
+    "bookPages": 311,
+    "bookLanguage": "English"
+}, {
+    "bookID": "69",
+    "bookTitle": "The Iliad",
+    "bookAuthor": "Homer",
+    "bookGenre": "Epic",
+    "bookYear": "8th Century BC",
+    "bookPublisher": "Various",
+    "bookPages": 683,
+    "bookLanguage": "Ancient Greek"
+}, {
+    "bookID": "70",
+    "bookTitle": "The Metamorphosis",
+    "bookAuthor": "Franz Kafka",
+    "bookGenre": "Absurdist Fiction",
+    "bookYear": "1915",
+    "bookPublisher": "Kurt Wolff Verlag",
+    "bookPages": 201,
+    "bookLanguage": "German"
+}, {
+    "bookID": "71",
+    "bookTitle": "A Farewell to Arms",
+    "bookAuthor": "Ernest Hemingway",
+    "bookGenre": "War Fiction",
+    "bookYear": "1929",
+    "bookPublisher": "Charles Scribner's Sons",
+    "bookPages": 355,
+    "bookLanguage": "English"
+}, {
+    "bookID": "72",
+    "bookTitle": "Middlemarch",
+    "bookAuthor": "George Eliot",
+    "bookGenre": "Literary Fiction",
+    "bookYear": "1871",
+    "bookPublisher": "William Blackwood and Sons",
+    "bookPages": 800,
+    "bookLanguage": "English"
+}, {
+    "bookID": "73",
+    "bookTitle": "Les Misérables",
+    "bookAuthor": "Victor Hugo",
+    "bookGenre": "Historical Fiction",
+    "bookYear": "1862",
+    "bookPublisher": "A. Lacroix, Verboeckhoven & Cie",
+    "bookPages": 1232,
+    "bookLanguage": "French"
+}, {
+    "bookID": "74",
+    "bookTitle": "War and Peace",
+    "bookAuthor": "Leo Tolstoy",
+    "bookGenre": "Historical Fiction",
+    "bookYear": "1869",
+    "bookPublisher": "The Russian Messenger",
+    "bookPages": 1225,
+    "bookLanguage": "Russian"
+}, {
+    "bookID": "75",
+    "bookTitle": "The Great Gatsby",
+    "bookAuthor": "F. Scott Fitzgerald",
+    "bookGenre": "Literary Fiction",
+    "bookYear": "1925",
+    "bookPublisher": "Charles Scribner's Sons",
+    "bookPages": 218,
+    "bookLanguage": "English"
+}, {
+    "bookID": "76",
+    "bookTitle": "The Scarlet Letter",
+    "bookAuthor": "Nathaniel Hawthorne",
+    "bookGenre": "Historical Fiction",
+    "bookYear": "1850",
+    "bookPublisher": "Ticknor, Reed & Fields",
+    "bookPages": 272,
+    "bookLanguage": "English"
+}, {
+    "bookID": "77",
+    "bookTitle": "Madame Bovary",
+    "bookAuthor": "Gustave Flaubert",
+    "bookGenre": "Literary Fiction",
+    "bookYear": "1857",
+    "bookPublisher": "Revue de Paris",
+    "bookPages": 328,
+    "bookLanguage": "French"
+}, {
+    "bookID": "78",
+    "bookTitle": "David Copperfield",
+    "bookAuthor": "Charles Dickens",
+    "bookGenre": "Literary Fiction",
+    "bookYear": "1850",
+    "bookPublisher": "Bradbury & Evans",
+    "bookPages": 882,
+    "bookLanguage": "English"
+}, {
+    "bookID": "79",
+    "bookTitle": "Wuthering Heights",
+    "bookAuthor": "Emily Brontë",
+    "bookGenre": "Gothic Fiction",
+    "bookYear": "1847",
+    "bookPublisher": "Thomas Cautley Newby",
+    "bookPages": 416,
+    "bookLanguage": "English"
+}, {
+    "bookID": "80",
+    "bookTitle": "Frankenstein",
+    "bookAuthor": "Mary Shelley",
+    "bookGenre": "Gothic Fiction",
+    "bookYear": "1818",
+    "bookPublisher": "Lackington, Hughes, Harding, Mavor & Jones",
+    "bookPages": 280,
+    "bookLanguage": "English"
+}, {
+    "bookID": "81",
+    "bookTitle": "The Grapes of Wrath",
+    "bookAuthor": "John Steinbeck",
+    "bookGenre": "Realist Novel",
+    "bookYear": "1939",
+    "bookPublisher": "The Viking Press-James Lloyd",
+    "bookPages": 464,
+    "bookLanguage": "English"
+}, {
+    "bookID": "82",
+    "bookTitle": "Mansfield Park",
+    "bookAuthor": "Jane Austen",
+    "bookGenre": "Literary Fiction",
+    "bookYear": "1814",
+    "bookPublisher": "Thomas Egerton",
+    "bookPages": 479,
+    "bookLanguage": "English"
+}, {
+    "bookID": "83",
+    "bookTitle": "Of Mice and Men",
+    "bookAuthor": "John Steinbeck",
+    "bookGenre": "Literary Fiction",
+    "bookYear": "1937",
+    "bookPublisher": "Covici Friede",
+    "bookPages": 107,
+    "bookLanguage": "English"
+}, {
+    "bookID": "84",
+    "bookTitle": "Persuasion",
+    "bookAuthor": "Jane Austen",
+    "bookGenre": "Literary Fiction",
+    "bookYear": "1817",
+    "bookPublisher": "John Murray",
+    "bookPages": 249,
+    "bookLanguage": "English"
+}, {
+    "bookID": "85",
+    "bookTitle": "Sense and Sensibility",
+    "bookAuthor": "Jane Austen",
+    "bookGenre": "Literary Fiction",
+    "bookYear": "1811",
+    "bookPublisher": "Thomas Egerton",
+    "bookPages": 226,
+    "bookLanguage": "English"
+}, {
+    "bookID": "86",
+    "bookTitle": "The Idiot",
+    "bookAuthor": "Fyodor Dostoevsky",
+    "bookGenre": "Philosophical Fiction",
+    "bookYear": "1869",
+    "bookPublisher": "The Russian Messenger",
+    "bookPages": 656,
+    "bookLanguage": "Russian"
+}, {
+    "bookID": "87",
+    "bookTitle": "The Sound and the Fury",
+    "bookAuthor": "William Faulkner",
+    "bookGenre": "Southern Gothic",
+    "bookYear": "1929",
+    "bookPublisher": "Jonathan Cape and Harrison Smith",
+    "bookPages": 326,
+    "bookLanguage": "English"
+}, {
+    "bookID": "88",
+    "bookTitle": "Heart of Darkness",
+    "bookAuthor": "Joseph Conrad",
+    "bookGenre": "Novella",
+    "bookYear": "1899",
+    "bookPublisher": "Blackwood's Magazine",
+    "bookPages": 164,
+    "bookLanguage": "English"
+}, {
+    "bookID": "89",
+    "bookTitle": "Siddhartha",
+    "bookAuthor": "Hermann Hesse",
+    "bookGenre": "Philosophical Fiction",
+    "bookYear": "1922",
+    "bookPublisher": "S. Fischer Verlag",
+    "bookPages": 152,
+    "bookLanguage": "German"
+}, {
+    "bookID": "90",
+    "bookTitle": "The Trial",
+    "bookAuthor": "Franz Kafka",
+    "bookGenre": "Absurdist Fiction",
+    "bookYear": "1922",
+    "bookPublisher": "S. Fischer Verlag",
+    "bookPages": 152,
+    "bookLanguage": "German"
+}]
