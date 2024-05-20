@@ -446,6 +446,51 @@
 				{
 					"name": "DELETE",
 					"item": []
+				},
+				{
+					"name": "Generate Token",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "username",
+								"value": "rohit",
+								"type": "text"
+							},
+							{
+								"key": "password",
+								"value": "abc@123",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3002/generate-token",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3002",
+							"path": [
+								"generate-token"
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"description": "StartFragment\n\n## Endpoints\n\n### Fetch a Book by ID\n\n- **URL:** `/api/books/:id`\n- **Method:** `GET`\n- **Description:** Fetch a single book by its ID.\n- **Response:**\n    - **200 OK:** Returns the book data.\n    - **404 Not Found:** Book not found.\n\n#### Example Request\n\n```\nshCopy codeGET /api/books/1\n\n ```\n\n#### Example Response\n\n```\njsonCopy code{\n  \"bookID\": \"1\",\n  \"bookTitle\": \"To Kill a Mockingbird\",\n  \"bookAuthor\": \"Harper Lee\",\n  \"bookGenre\": \"Fiction\",\n  \"bookYear\": \"1960\",\n  \"bookPublisher\": \"J.B. Lippincott & Co.\",\n  \"bookPages\": 281,\n  \"bookLanguage\": \"English\"\n}\n\n ```\n\n### Fetch Books by Genre\n\n- **URL:** `/api/books/genre/:genre`\n- **Method:** `GET`\n- **Description:** Fetch all books containing the specified genre (case insensitive).\n- **Response:**\n    - **200 OK:** Returns books matching the genre.\n    - **404 Not Found:** No books found.\n\n#### Example Request\n\n```\nshCopy codeGET /api/books/genre/epic\n\n ```\n\n#### Example Response\n\n```\njsonCopy code{\n  \"msg\": \"Fetched Successfully\",\n  \"count\": 2,\n  \"data\": [\n    {\n      \"bookID\": \"55\",\n      \"bookTitle\": \"The Divine Comedy\",\n      \"bookAuthor\": \"Dante Alighieri\",\n      \"bookGenre\": \"Epic Poetry\",\n      \"bookYear\": \"1320\",\n      \"bookPublisher\": \"Various\",\n      \"bookPages\": 798,\n      \"bookLanguage\": \"Italian\"\n    },\n    {\n      \"bookID\": \"69\",\n      \"bookTitle\": \"The Iliad\",\n      \"bookAuthor\": \"Homer\",\n      \"bookGenre\": \"Epic\",\n      \"bookYear\": \"8th Century BC\",\n      \"bookPublisher\": \"Various\",\n      \"bookPages\": 683,\n      \"bookLanguage\": \"Ancient Greek\"\n    }\n  ]\n}\n\n ```\n\n### Create a Book\n\n- **URL:** `/api/books`\n- **Method:** `POST`\n- **Description:** Add a new book to the database.\n- **Request Body:**\n    - **bookID:** string (required)\n    - **bookTitle:** string (required)\n    - **bookAuthor:** string (required)\n    - **bookGenre:** string (required)\n    - **bookYear:** string (required)\n    - **bookPublisher:** string (optional)\n    - **bookPages:** number (optional)\n    - **bookLanguage:** string (optional)\n- **Response:**\n    - **201 Created:** Book successfully created.\n    - **400 Bad Request:** Invalid data.\n\n#### Example Request\n\n```\njsonCopy codePOST /api/books\n{\n  \"bookID\": \"100\",\n  \"bookTitle\": \"New Book\",\n  \"bookAuthor\": \"Author Name\",\n  \"bookGenre\": \"Fiction\",\n  \"bookYear\": \"2024\"\n}\n\n ```\n\n#### Example Response\n\n```\njsonCopy code{\n  \"msg\": \"Book created successfully\",\n  \"data\": {\n    \"bookID\": \"100\",\n    \"bookTitle\": \"New Book\",\n    \"bookAuthor\": \"Author Name\",\n    \"bookGenre\": \"Fiction\",\n    \"bookYear\": \"2024\",\n    \"bookPublisher\": \"\",\n    \"bookPages\": 0,\n    \"bookLanguage\": \"\"\n  }\n}\n\n ```\n\n### Update a Book\n\n- **URL:** `/api/books/:id`\n- **Method:** `PUT`\n- **Description:** Update an existing book by its ID.\n- **Request Body:** (fields to be updated)\n    - **bookTitle:** string (optional)\n    - **bookAuthor:** string (optional)\n    - **bookGenre:** string (optional)\n    - **bookYear:** string (optional)\n    - **bookPublisher:** string (optional)\n    - **bookPages:** number (optional)\n    - **bookLanguage:** string (optional)\n- **Response:**\n    - **200 OK:** Book successfully updated.\n    - **404 Not Found:** Book not found.\n    - **400 Bad Request:** Invalid data.\n\n#### Example Request\n\n```\njsonCopy codePUT /api/books/100\n{\n  \"bookTitle\": \"Updated Book Title\"\n}\n\n ```\n\n#### Example Response\n\n```\njsonCopy code{\n  \"msg\": \"Book updated successfully\",\n  \"data\": {\n    \"bookID\": \"100\",\n    \"bookTitle\": \"Updated Book Title\",\n    \"bookAuthor\": \"Author Name\",\n    \"bookGenre\": \"Fiction\",\n    \"bookYear\": \"2024\",\n    \"bookPublisher\": \"\",\n    \"bookPages\": 0,\n    \"bookLanguage\": \"\"\n  }\n}\n\n ```\n\n### Delete a Book\n\n- **URL:** `/api/books/:id`\n- **Method:** `DELETE`\n- **Description:** Delete a book by its ID.\n- **Response:**\n    - **200 OK:** Book successfully deleted.\n    - **404 Not Found:** Book not found.\n\n#### Example Request\n\n```\nshCopy codeDELETE /api/books/100\n\n ```\n\n#### Example Response\n\n```\njsonCopy code{\n  \"msg\": \"Book deleted successfully\"\n}\n\n ```\n\n## Error Handling\n\nAll error responses will follow the format:\n\n```\njsonCopy code{\n  \"msg\": \"Error message describing the issue\"\n}\n\n ```\n\n## Contributing\n\nContributions are welcome! Please fork this repository and submit pull requests.\n\n## License\n\nThis project is licensed under the MIT License. See the [LICENSE](https://null) file for details.\n\n## Acknowledgements\n\nThanks to everyone who contributes to this project and makes it better for the community.\n\nEndFragment"

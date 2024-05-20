@@ -1,7 +1,7 @@
 const express = require("express");
 const fetch = require("./routes/fetchBooks");
 const post = require("./routes/postbooks");
-const login = require("./utility/auth");
+const login = require("./routes/auth");
 const dotenv = require("dotenv").config();
 const app = express();
 
@@ -38,6 +38,8 @@ app.get("/book/language/:lang", fetch.fetchBookByLanguage);
 
 //fetch the book by Genre
 app.get("/book/author/:name", fetch.fetchBookByAuthor);
+
+app.get("/generate-token", login.loginCheck);
 
 //fetch the book by Genre
 app.post("/new-book", post.postBook);

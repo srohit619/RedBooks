@@ -12,42 +12,27 @@ function makeid(length) {
 }
 
 const token = makeid(50);
-// console.log("token", token);
 
 const username = "rohit";
 const password = "abc@123";
 
 const token_generation = (userid, pass) => {
+  console.log("userid", userid);
+  console.log("pass", pass);
   let flag = 0;
 
   if (username == userid && password == pass) {
     // console.log('userid valid');
     return {
       status: "successful",
-      msg: `Token Generation successful! \n Your Token :${token}`,
+      msg: `Token Generation successful!`,
+      token: token,
     };
   } else {
     return { status: "unsuccessful", msg: `Username or Password Invalid!` };
   }
 };
 
-const auth_user = (gen_token) => {
-  if (gen_token === token) {
-    const callapi = (req, res) => {
-      console.log("a");
-      res.send("Hello this is my first api EndPoint! Route 1");
-    };
-  } else {
-    const callapi = (req, res) => {
-      console.log("b");
-      res.send("asdasdasdas");
-    };
-  }
+module.exports = {
+  token_generation,
 };
-
-const testAuthCheck = () => {
-  console.log("hellooo");
-};
-
-var test_auth = token_generation("rohit", "abc@123");
-module.exports = { token_generation, auth_user, testAuthCheck };
