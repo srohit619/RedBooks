@@ -1,6 +1,7 @@
 const express = require("express");
 const fetch = require("./routes/fetchBooks");
 const post = require("./routes/postbooks");
+const login = require("./utility/auth");
 const dotenv = require("dotenv").config();
 const app = express();
 
@@ -16,6 +17,7 @@ const DB = require("./sampleDB.json");
 
 app.use((req, res, next) => {
   console.log("this is middleware");
+  console.log("login.testAuthCheck", login.testAuthCheck);
   next();
 });
 

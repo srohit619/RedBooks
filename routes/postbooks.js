@@ -1,5 +1,9 @@
+// const DB = require("../sampleDB.json");
+
+// console.log("DB", DB);
+const fs = require("fs");
 const postBook = (req, res) => {
-  console.log("req.body", req.body);
+  // console.log("req.body", req.body);
   let resData = {
     msg: "book Successfully Created!",
     data: req.body,
@@ -8,9 +12,11 @@ const postBook = (req, res) => {
   res.send(resData);
 };
 
+// let sampleDB = fs.readFileSync("../sampleDB.json", "utf8");
+// console.log("sampleDB".sampleDB);
+
 const pushToDB = (book_obj) => {
   console.log("pushToDB loaded!");
-  let sampleDB = fs.readFileSync("./sampleDB.json", "utf8");
   let parsedData = JSON.parse(sampleDB);
   let uniqueBookID = parsedData.length + 1;
   let finalObj = {
@@ -24,13 +30,23 @@ const pushToDB = (book_obj) => {
     bookLanguage: book_obj.bookLanguage,
   };
 
-  parsedData.push(finalObj);
-  fs.writeFileSync("./sampleDB.json", JSON.stringify(parsedData));
+  // parsedData.push(finalObj);
+  // fs.writeFileSync("./sampleDB.json", JSON.stringify(parsedData));
 
   console.log("parsedData,", parsedData);
 };
 
-//   pushToDB(sampleData);
+let sampleData = {
+  bookTitle: "Rohik sick",
+  bookAuthor: "Herman Melville",
+  bookGenre: "Adventure",
+  bookYear: "1851",
+  bookPublisher: "Harper & Brothers",
+  bookPages: "635",
+  bookLanguage: "English",
+};
+
+// pushToDB(sampleData);
 
 module.exports = {
   postBook,
