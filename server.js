@@ -1,7 +1,12 @@
 const express = require("express");
 const fetch = require("./routes/fetchBooks");
+const post = require("./routes/postbooks");
 const dotenv = require("dotenv").config();
 const app = express();
+
+var bodyParser = require("body-parser");
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 const port = process.env.PORT || 3001;
 
@@ -32,4 +37,7 @@ app.get("/book/language/:lang", fetch.fetchBookByLanguage);
 //fetch the book by Genre
 app.get("/book/author/:name", fetch.fetchBookByAuthor);
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+//fetch the book by Genre
+app.post("/new-book", post.postBook);
+
+app.listen(port, () => console.log(`Server running on Port: ${port}!`));

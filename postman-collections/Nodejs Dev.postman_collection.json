@@ -1,0 +1,454 @@
+{
+	"info": {
+		"_postman_id": "ec7027e4-d098-4f8c-9a09-71dabec5ff2d",
+		"name": "Nodejs Dev",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30957379",
+		"_collection_link": "https://solar-meteor-705300.postman.co/workspace/New-Team-Workspace~d04c5b34-f91d-4460-8caa-036409e9db1e/collection/30957379-ec7027e4-d098-4f8c-9a09-71dabec5ff2d?action=share&source=collection_link&creator=30957379"
+	},
+	"item": [
+		{
+			"name": "encryption and decryption",
+			"item": [
+				{
+					"name": "encrypt",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"enc\":\"hello this is sample text!!!  before encryption!!!!!\",\r\n    \"key\":\"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3002/encrypt",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3002",
+							"path": [
+								"encrypt"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "decrypt",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"encryptedBody\":\"U2FsdGVkX1+VHSIZcnAJdONlqIvPGRd10cjDjjfnS0vbxUt+pADU6c+At+4xDMYVpU/RZdIzM/ana3fGK4ZXoa3DmfQrF3Nfy0NchZxKW3M=\",\r\n    \"key\":\"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3002/decrypt",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3002",
+							"path": [
+								"decrypt"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Books API",
+			"item": [
+				{
+					"name": "GET",
+					"item": [
+						{
+							"name": "getAllBooks",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "abc",
+										"type": "text"
+									},
+									{
+										"key": "username",
+										"value": "logan",
+										"type": "text"
+									},
+									{
+										"key": "password",
+										"value": "123",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:3002/books",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3002",
+									"path": [
+										"books"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getBookByID",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "abc",
+										"type": "text"
+									},
+									{
+										"key": "username",
+										"value": "logan",
+										"type": "text"
+									},
+									{
+										"key": "password",
+										"value": "123",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:3002/book/2",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3002",
+									"path": [
+										"book",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getBookByYear",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "abc",
+										"type": "text"
+									},
+									{
+										"key": "username",
+										"value": "logan",
+										"type": "text"
+									},
+									{
+										"key": "password",
+										"value": "123",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:3002/book/year/1869",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3002",
+									"path": [
+										"book",
+										"year",
+										"1869"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getBookByGenre",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "abc",
+										"type": "text"
+									},
+									{
+										"key": "username",
+										"value": "logan",
+										"type": "text"
+									},
+									{
+										"key": "password",
+										"value": "123",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:3002/book/genre/Ficti",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3002",
+									"path": [
+										"book",
+										"genre",
+										"Ficti"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getBookByLanguage",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "abc",
+										"type": "text"
+									},
+									{
+										"key": "username",
+										"value": "logan",
+										"type": "text"
+									},
+									{
+										"key": "password",
+										"value": "123",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:3002/book/language/French",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3002",
+									"path": [
+										"book",
+										"language",
+										"French"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getBookByAuthor",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "abc",
+										"type": "text"
+									},
+									{
+										"key": "username",
+										"value": "logan",
+										"type": "text"
+									},
+									{
+										"key": "password",
+										"value": "123",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:3002/book/author/Adb",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3002",
+									"path": [
+										"book",
+										"author",
+										"Adb"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "POST",
+					"item": [
+						{
+							"name": "create new book",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "abc",
+										"type": "text"
+									},
+									{
+										"key": "username",
+										"value": "logan",
+										"type": "text"
+									},
+									{
+										"key": "password",
+										"value": "123",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"bookTitle\": \"Rohik sick\",\r\n  \"bookAuthor\": \"Herman Melville\",\r\n  \"bookGenre\": \"Adventure\",\r\n  \"bookYear\": \"1851\",\r\n  \"bookPublisher\": \"Harper & Brothers\",\r\n  \"bookPages\": \"635\",\r\n  \"bookLanguage\": \"English\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:3002/new-book",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3002",
+									"path": [
+										"new-book"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "DELETE",
+					"item": []
+				}
+			],
+			"description": "StartFragment\n\n## Endpoints\n\n### Fetch a Book by ID\n\n- **URL:** `/api/books/:id`\n- **Method:** `GET`\n- **Description:** Fetch a single book by its ID.\n- **Response:**\n    - **200 OK:** Returns the book data.\n    - **404 Not Found:** Book not found.\n\n#### Example Request\n\n```\nshCopy codeGET /api/books/1\n\n ```\n\n#### Example Response\n\n```\njsonCopy code{\n  \"bookID\": \"1\",\n  \"bookTitle\": \"To Kill a Mockingbird\",\n  \"bookAuthor\": \"Harper Lee\",\n  \"bookGenre\": \"Fiction\",\n  \"bookYear\": \"1960\",\n  \"bookPublisher\": \"J.B. Lippincott & Co.\",\n  \"bookPages\": 281,\n  \"bookLanguage\": \"English\"\n}\n\n ```\n\n### Fetch Books by Genre\n\n- **URL:** `/api/books/genre/:genre`\n- **Method:** `GET`\n- **Description:** Fetch all books containing the specified genre (case insensitive).\n- **Response:**\n    - **200 OK:** Returns books matching the genre.\n    - **404 Not Found:** No books found.\n\n#### Example Request\n\n```\nshCopy codeGET /api/books/genre/epic\n\n ```\n\n#### Example Response\n\n```\njsonCopy code{\n  \"msg\": \"Fetched Successfully\",\n  \"count\": 2,\n  \"data\": [\n    {\n      \"bookID\": \"55\",\n      \"bookTitle\": \"The Divine Comedy\",\n      \"bookAuthor\": \"Dante Alighieri\",\n      \"bookGenre\": \"Epic Poetry\",\n      \"bookYear\": \"1320\",\n      \"bookPublisher\": \"Various\",\n      \"bookPages\": 798,\n      \"bookLanguage\": \"Italian\"\n    },\n    {\n      \"bookID\": \"69\",\n      \"bookTitle\": \"The Iliad\",\n      \"bookAuthor\": \"Homer\",\n      \"bookGenre\": \"Epic\",\n      \"bookYear\": \"8th Century BC\",\n      \"bookPublisher\": \"Various\",\n      \"bookPages\": 683,\n      \"bookLanguage\": \"Ancient Greek\"\n    }\n  ]\n}\n\n ```\n\n### Create a Book\n\n- **URL:** `/api/books`\n- **Method:** `POST`\n- **Description:** Add a new book to the database.\n- **Request Body:**\n    - **bookID:** string (required)\n    - **bookTitle:** string (required)\n    - **bookAuthor:** string (required)\n    - **bookGenre:** string (required)\n    - **bookYear:** string (required)\n    - **bookPublisher:** string (optional)\n    - **bookPages:** number (optional)\n    - **bookLanguage:** string (optional)\n- **Response:**\n    - **201 Created:** Book successfully created.\n    - **400 Bad Request:** Invalid data.\n\n#### Example Request\n\n```\njsonCopy codePOST /api/books\n{\n  \"bookID\": \"100\",\n  \"bookTitle\": \"New Book\",\n  \"bookAuthor\": \"Author Name\",\n  \"bookGenre\": \"Fiction\",\n  \"bookYear\": \"2024\"\n}\n\n ```\n\n#### Example Response\n\n```\njsonCopy code{\n  \"msg\": \"Book created successfully\",\n  \"data\": {\n    \"bookID\": \"100\",\n    \"bookTitle\": \"New Book\",\n    \"bookAuthor\": \"Author Name\",\n    \"bookGenre\": \"Fiction\",\n    \"bookYear\": \"2024\",\n    \"bookPublisher\": \"\",\n    \"bookPages\": 0,\n    \"bookLanguage\": \"\"\n  }\n}\n\n ```\n\n### Update a Book\n\n- **URL:** `/api/books/:id`\n- **Method:** `PUT`\n- **Description:** Update an existing book by its ID.\n- **Request Body:** (fields to be updated)\n    - **bookTitle:** string (optional)\n    - **bookAuthor:** string (optional)\n    - **bookGenre:** string (optional)\n    - **bookYear:** string (optional)\n    - **bookPublisher:** string (optional)\n    - **bookPages:** number (optional)\n    - **bookLanguage:** string (optional)\n- **Response:**\n    - **200 OK:** Book successfully updated.\n    - **404 Not Found:** Book not found.\n    - **400 Bad Request:** Invalid data.\n\n#### Example Request\n\n```\njsonCopy codePUT /api/books/100\n{\n  \"bookTitle\": \"Updated Book Title\"\n}\n\n ```\n\n#### Example Response\n\n```\njsonCopy code{\n  \"msg\": \"Book updated successfully\",\n  \"data\": {\n    \"bookID\": \"100\",\n    \"bookTitle\": \"Updated Book Title\",\n    \"bookAuthor\": \"Author Name\",\n    \"bookGenre\": \"Fiction\",\n    \"bookYear\": \"2024\",\n    \"bookPublisher\": \"\",\n    \"bookPages\": 0,\n    \"bookLanguage\": \"\"\n  }\n}\n\n ```\n\n### Delete a Book\n\n- **URL:** `/api/books/:id`\n- **Method:** `DELETE`\n- **Description:** Delete a book by its ID.\n- **Response:**\n    - **200 OK:** Book successfully deleted.\n    - **404 Not Found:** Book not found.\n\n#### Example Request\n\n```\nshCopy codeDELETE /api/books/100\n\n ```\n\n#### Example Response\n\n```\njsonCopy code{\n  \"msg\": \"Book deleted successfully\"\n}\n\n ```\n\n## Error Handling\n\nAll error responses will follow the format:\n\n```\njsonCopy code{\n  \"msg\": \"Error message describing the issue\"\n}\n\n ```\n\n## Contributing\n\nContributions are welcome! Please fork this repository and submit pull requests.\n\n## License\n\nThis project is licensed under the MIT License. See the [LICENSE](https://null) file for details.\n\n## Acknowledgements\n\nThanks to everyone who contributes to this project and makes it better for the community.\n\nEndFragment"
+		}
+	]
+}
