@@ -1,6 +1,13 @@
-const DB = require("../sampleDB.json");
 const fs = require("fs");
 const path = require("path");
+
+//for now I have used a JSON file as database which will be later turned into a dynamic Mongodb Collections
+const DB = require("../sampleDB.json");
+
+/*
+functionName: fetchBookById
+whatItDoes: used for fetching all the books from the collection(Database).
+*/
 
 const fetchBookById = (id) => {
   let resData = {
@@ -24,6 +31,10 @@ const fetchBookById = (id) => {
   return resData;
 };
 
+/*
+functionName: fetchBookByYear
+whatItDoes: used for fetching books from the collection(Database) by using the Book Year, this returns arrays of matching books .
+*/
 const fetchBookByYear = (year) => {
   let resData = {
     msg: "Book not found in Database!",
@@ -42,6 +53,10 @@ const fetchBookByYear = (year) => {
   return resData;
 };
 
+/*
+functionName: fetchBookByGenre
+whatItDoes: used for fetching books from the collection(Database) by using the Book Genre, this returns arrays of matching books .
+*/
 const fetchBookByGenre = (genre) => {
   let resData = {
     msg: "Book not found in Database!",
@@ -67,6 +82,10 @@ const fetchBookByGenre = (genre) => {
   return resData;
 };
 
+/*
+functionName: fetchBookByLanguage
+whatItDoes: used for fetching books from the collection(Database) by using the Book Language, this returns arrays of matching books .
+*/
 const fetchBookByLanguage = (lang) => {
   let resData = {
     msg: "Book not found in Database!",
@@ -92,6 +111,10 @@ const fetchBookByLanguage = (lang) => {
   return resData;
 };
 
+/*
+functionName: fetchBookByAuthor
+whatItDoes: used for fetching books from the collection(Database) by using the Book author, this returns arrays of matching books .
+*/
 const fetchBookByAuthor = (name) => {
   let resData = {
     msg: "Book not found in Database!",
@@ -117,6 +140,10 @@ const fetchBookByAuthor = (name) => {
   return resData;
 };
 
+/*
+functionName: publishToDB
+whatItDoes: used for publishing a new book into the existing collection(Database).
+*/
 const publishToDB = (book_obj) => {
   console.log("pushToDB loaded!");
   // console.log("D1");

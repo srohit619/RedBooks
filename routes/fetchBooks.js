@@ -1,5 +1,14 @@
+//for now I have used a JSON file as database which will be later turned into a dynamic Mongodb Collections
 const DB = require("../sampleDB.json");
+
+// All the functions are written in different js file called bookFunc
 const bookFunc = require("../controllers/bookFunc");
+
+/*
+functionName: fetchBooks
+whatItDoes: used for fetching all the books from the collection(Database).
+requestType : GET
+*/
 
 const fetchBooks = (req, res) => {
   let resData = {
@@ -11,11 +20,23 @@ const fetchBooks = (req, res) => {
   res.send(resData);
 };
 
+/*
+functionName: fetchBookById
+whatItDoes: used for fetching specific book from the collection(Database) by using the Unique Book ID .
+requestType : GET
+*/
+
 const fetchBookById = (req, res) => {
   console.log(":id route", req.params);
   let data = bookFunc.fetchBookById(req.params.id);
   res.send(data);
 };
+
+/*
+functionName: fetchBookByYear
+whatItDoes: used for fetching books from the collection(Database) by using the Book Year, this returns arrays of matching books .
+requestType : GET
+*/
 
 const fetchBookByYear = (req, res) => {
   console.log("year route", req.params);
@@ -23,17 +44,35 @@ const fetchBookByYear = (req, res) => {
   res.send(data);
 };
 
+/*
+functionName: fetchBookByGenre
+whatItDoes: used for fetching books from the collection(Database) by using the Book Genre, this returns arrays of matching books .
+requestType : GET
+*/
+
 const fetchBookByGenre = (req, res) => {
   console.log("genre route", req.params);
   let data = bookFunc.fetchBookByGenre(req.params.genre);
   res.send(data);
 };
 
+/*
+functionName: fetchBookByLanguage
+whatItDoes: used for fetching books from the collection(Database) by using the Book Language, this returns arrays of matching books .
+requestType : GET
+*/
+
 const fetchBookByLanguage = (req, res) => {
   console.log("language route", req.params);
   let data = bookFunc.fetchBookByLanguage(req.params.lang);
   res.send(data);
 };
+
+/*
+functionName: fetchBookByAuthor
+whatItDoes: used for fetching books from the collection(Database) by using the Book author, this returns arrays of matching books .
+requestType : GET
+*/
 
 const fetchBookByAuthor = (req, res) => {
   console.log("author route", req.params);

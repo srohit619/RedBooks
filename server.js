@@ -1,23 +1,21 @@
 const express = require("express");
+var bodyParser = require("body-parser");
+const dotenv = require("dotenv").config();
+
+// These are Custom Modules which are imported using Require
 const fetch = require("./routes/fetchBooks");
 const post = require("./routes/postbooks");
 const login = require("./routes/auth");
-const dotenv = require("dotenv").config();
-const app = express();
+const deletBook = require("./routes/deleteBooks");
 
-var bodyParser = require("body-parser");
+const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
 const port = process.env.PORT || 3001;
-
-const DB = require("./sampleDB.json");
-
-// console.log("DB", DB);
 
 app.use((req, res, next) => {
   console.log("this is middleware");
-  console.log("login.testAuthCheck", login.testAuthCheck);
+  // console.log("login.testAuthCheck", login.testAuthCheck);
   next();
 });
 
@@ -43,5 +41,8 @@ app.get("/generate-token", login.loginCheck);
 
 //fetch the book by Genre
 app.post("/new-book", post.postBook);
+
+//Deletes a book by ID
+app.delete("/book/delete", deletBook.deleteBookById);
 
 app.listen(port, () => console.log(`Server running on Port: ${port}!`));
