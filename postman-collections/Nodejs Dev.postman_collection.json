@@ -75,7 +75,7 @@
 			]
 		},
 		{
-			"name": "Books API",
+			"name": "Redbooks API",
 			"item": [
 				{
 					"name": "GET",
@@ -417,7 +417,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"bookTitle\": \"Rohik sick\",\r\n  \"bookAuthor\": \"Herman Melville\",\r\n  \"bookGenre\": \"Adventure\",\r\n  \"bookYear\": \"1851\",\r\n  \"bookPublisher\": \"Harper & Brothers\",\r\n  \"bookPages\": \"635\",\r\n  \"bookLanguage\": \"English\"\r\n}",
+									"raw": "{\r\n  \"bookTitle\": \"aa sick\",\r\n  \"bookAuthor\": \"Herman Melville\",\r\n  \"bookGenre\": \"Adventure\",\r\n  \"bookYear\": \"1851\",\r\n  \"bookPublisher\": \"Harper & Brothers\",\r\n  \"bookPages\": \"635\",\r\n  \"bookLanguage\": \"English\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
