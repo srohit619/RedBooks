@@ -27,8 +27,8 @@ requestType : GET
 */
 
 const fetchBookById = (req, res) => {
-  console.log(":id route", req.params);
-  let data = bookFunc.fetchBookById(req.params.id);
+  console.log(":id route", req.query);
+  let data = bookFunc.fetchBookById(req.query.id);
   res.send(data);
 };
 
@@ -39,8 +39,8 @@ requestType : GET
 */
 
 const fetchBookByYear = (req, res) => {
-  console.log("year route", req.params);
-  let data = bookFunc.fetchBookByYear(req.params.year);
+  console.log("year route", req.query);
+  let data = bookFunc.fetchBookByYear(req.query.year);
   res.send(data);
 };
 
@@ -51,8 +51,8 @@ requestType : GET
 */
 
 const fetchBookByGenre = (req, res) => {
-  console.log("genre route", req.params);
-  let data = bookFunc.fetchBookByGenre(req.params.genre);
+  console.log("genre route", req.query);
+  let data = bookFunc.fetchBookByGenre(req.query.genre);
   res.send(data);
 };
 
@@ -63,8 +63,8 @@ requestType : GET
 */
 
 const fetchBookByLanguage = (req, res) => {
-  console.log("language route", req.params);
-  let data = bookFunc.fetchBookByLanguage(req.params.lang);
+  console.log("language route", req.query);
+  let data = bookFunc.fetchBookByLanguage(req.query.lang);
   res.send(data);
 };
 
@@ -75,8 +75,8 @@ requestType : GET
 */
 
 const fetchBookByAuthor = (req, res) => {
-  console.log("author route", req.params);
-  let data = bookFunc.fetchBookByAuthor(req.params.name);
+  console.log("author route", req.query);
+  let data = bookFunc.fetchBookByAuthor(req.query.author);
   res.send(data);
 };
 

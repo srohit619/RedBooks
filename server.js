@@ -15,34 +15,36 @@ const port = process.env.PORT || 3001;
 
 app.use((req, res, next) => {
   console.log("this is middleware");
-  // console.log("login.testAuthCheck", login.testAuthCheck);
   next();
 });
 
 //fetch all the books
 app.get("/books", fetch.fetchBooks);
 
-//fetch the book by ID
-app.get("/book/:id", fetch.fetchBookById);
-
-//fetch the book by Year
-app.get("/book/year/:year", fetch.fetchBookByYear);
-
-//fetch the book by Genre
-app.get("/book/genre/:genre", fetch.fetchBookByGenre);
-
-//fetch the book by Genre
-app.get("/book/language/:lang", fetch.fetchBookByLanguage);
-
-//fetch the book by Genre
-app.get("/book/author/:name", fetch.fetchBookByAuthor);
-
+//Generates Token for using the api
 app.get("/generate-token", login.loginCheck);
 
-//fetch the book by Genre
-app.post("/new-book", post.postBook);
+// Used route and conditionals for GET Requests
+app
+  .route("/book/")
+  .get((req, res) => {
+    const { id, year, genre, lang, author } = req.query;
 
-//Deletes a book by ID
-app.delete("/book/delete", deletBook.deleteBookById);
+    if (id) {
+      fetch.fetchBookById(req, res);
+    } else if (year) {
+      fetch.fetchBookByYear(req, res);
+    } else if (genre) {
+      fetch.fetchBookByGenre(req, res);
+    } else if (lang) {
+      fetch.fetchBookByLanguage(req, res);
+    } else if (author) {
+      fetch.fetchBookByAuthor(req, res);
+    } else {
+      res.status(400).send("No valid query parameter provided.");
+    }
+  })
+  .post(post.postBook)
+  .delete(deletBook.deleteBookById);
 
 app.listen(port, () => console.log(`Server running on Port: ${port}!`));

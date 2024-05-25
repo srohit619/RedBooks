@@ -164,7 +164,7 @@
 									}
 								},
 								"url": {
-									"raw": "http://127.0.0.1:3002/book/2",
+									"raw": "http://127.0.0.1:3002/book/?id=12",
 									"protocol": "http",
 									"host": [
 										"127",
@@ -175,7 +175,13 @@
 									"port": "3002",
 									"path": [
 										"book",
-										"2"
+										""
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "12"
+										}
 									]
 								}
 							},
@@ -215,7 +221,7 @@
 									}
 								},
 								"url": {
-									"raw": "http://127.0.0.1:3002/book/year/1869",
+									"raw": "http://127.0.0.1:3002/book/?year=1869",
 									"protocol": "http",
 									"host": [
 										"127",
@@ -226,8 +232,13 @@
 									"port": "3002",
 									"path": [
 										"book",
-										"year",
-										"1869"
+										""
+									],
+									"query": [
+										{
+											"key": "year",
+											"value": "1869"
+										}
 									]
 								}
 							},
@@ -267,7 +278,7 @@
 									}
 								},
 								"url": {
-									"raw": "http://127.0.0.1:3002/book/genre/Ficti",
+									"raw": "http://127.0.0.1:3002/book/?genre=Ficti",
 									"protocol": "http",
 									"host": [
 										"127",
@@ -278,8 +289,13 @@
 									"port": "3002",
 									"path": [
 										"book",
-										"genre",
-										"Ficti"
+										""
+									],
+									"query": [
+										{
+											"key": "genre",
+											"value": "Ficti"
+										}
 									]
 								}
 							},
@@ -319,7 +335,7 @@
 									}
 								},
 								"url": {
-									"raw": "http://127.0.0.1:3002/book/language/French",
+									"raw": "http://127.0.0.1:3002/book/?lang=French",
 									"protocol": "http",
 									"host": [
 										"127",
@@ -330,8 +346,13 @@
 									"port": "3002",
 									"path": [
 										"book",
-										"language",
-										"French"
+										""
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "French"
+										}
 									]
 								}
 							},
@@ -371,7 +392,7 @@
 									}
 								},
 								"url": {
-									"raw": "http://127.0.0.1:3002/book/author/Adb",
+									"raw": "http://127.0.0.1:3002/book/?author=Adb",
 									"protocol": "http",
 									"host": [
 										"127",
@@ -382,8 +403,13 @@
 									"port": "3002",
 									"path": [
 										"book",
-										"author",
-										"Adb"
+										""
+									],
+									"query": [
+										{
+											"key": "author",
+											"value": "Adb"
+										}
 									]
 								}
 							},
@@ -425,7 +451,7 @@
 									}
 								},
 								"url": {
-									"raw": "http://127.0.0.1:3002/new-book",
+									"raw": "http://127.0.0.1:3002/book",
 									"protocol": "http",
 									"host": [
 										"127",
@@ -435,7 +461,7 @@
 									],
 									"port": "3002",
 									"path": [
-										"new-book"
+										"book"
 									]
 								}
 							},
@@ -477,7 +503,7 @@
 									}
 								},
 								"url": {
-									"raw": "http://127.0.0.1:3002/book/delete/?id=1",
+									"raw": "http://127.0.0.1:3002/book/?id=1",
 									"protocol": "http",
 									"host": [
 										"127",
@@ -488,7 +514,6 @@
 									"port": "3002",
 									"path": [
 										"book",
-										"delete",
 										""
 									],
 									"query": [
