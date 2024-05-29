@@ -1,6 +1,8 @@
 //for now I have used a JSON file as database which will be later turned into a dynamic Mongodb Collections
 const DB = require("../sampleDB.json");
 
+const db = require("../controllers/dbOperations");
+
 // All the functions are written in different js file called bookFunc
 const bookFunc = require("../controllers/bookFunc");
 
@@ -10,13 +12,13 @@ whatItDoes: used for fetching all the books from the collection(Database).
 requestType : GET
 */
 
-const fetchBooks = (req, res) => {
+const fetchBooks = async (req, res) => {
   let resData = {
     msg: "Fetched Successfully",
     count: DB.length,
     data: DB,
   };
-
+  // await db.readDocuments({ name: "John Doe" });
   res.send(resData);
 };
 
@@ -26,9 +28,9 @@ whatItDoes: used for fetching specific book from the collection(Database) by usi
 requestType : GET
 */
 
-const fetchBookById = (req, res) => {
+const fetchBookById = async (req, res) => {
   console.log(":id route", req.query);
-  let data = bookFunc.fetchBookById(req.query.id);
+  let data = await bookFunc.fetchBookById(req.query.id);
   res.send(data);
 };
 

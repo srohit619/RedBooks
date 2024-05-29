@@ -1,6 +1,8 @@
 const fs = require("fs");
 const path = require("path");
 
+const db = require("./dbOperations");
+
 //for now I have used a JSON file as database which will be later turned into a dynamic Mongodb Collections
 const DB = require("../sampleDB.json");
 
@@ -9,7 +11,7 @@ functionName: fetchBookById
 whatItDoes: used for fetching all the books from the collection(Database).
 */
 
-const fetchBookById = (id) => {
+const fetchBookById1 = (id) => {
   let resData = {
     msg: "Book not found in Database!",
     bookID: id,
@@ -28,10 +30,45 @@ const fetchBookById = (id) => {
       data = resData.data.push(book);
       console.log("book.bookID", book.bookID);
     }
+    const testdata = db.readDocuments({ name: "John Doe" });
+    console.log("testdata", testdata);
 
     return resData;
   } catch (error) {
     console.log("error", error);
+  }
+};
+
+const fetchBookById = async (id) => {
+  let resData = {
+    msg: "Book not found in Database!",
+    bookID: id,
+    data: [],
+  };
+  try {
+    const book = DB.find((book) => id === book.bookID);
+
+    if (book) {
+      resData.msg = "Fetched Successfully";
+      resData.data.push(book);
+      console.log("book.bookID", book.bookID);
+    }
+
+    const testdata = await db.readDocuments({ name: "John Doe" });
+    // console.log("testdata", testdata);
+    // console.log("testdata.length > 0", testdata.length > 0);
+
+    if (testdata.length > 0) {
+      // resData.msg = "Fetched Successfully from MongoDB";
+      resData.data.push(testdata);
+    }
+    console.log("resData", resData);
+
+    return resData;
+  } catch (error) {
+    console.log("error", error);
+    resData.msg = "Error fetching data from MongoDB";
+    return resData;
   }
 };
 

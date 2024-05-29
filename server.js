@@ -1,6 +1,7 @@
 const express = require("express");
 var bodyParser = require("body-parser");
 const dotenv = require("dotenv").config();
+const connect = require("./utility/dbConnection");
 
 // These are Custom Modules which are imported using Require
 const fetch = require("./routes/fetchBooks");
